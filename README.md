@@ -1,2 +1,2 @@
-# internkart.github.io
-official website
+# InstaKart
+.
