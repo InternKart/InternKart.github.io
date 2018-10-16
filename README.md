@@ -1,2 +1,2 @@
-# InstaKart
+# InternKart
 .
