@@ -174,7 +174,7 @@ p a {
 
 .logo {
   float: left;
-  margin: 8px 20px 0;
+  margin: auto;
   width: 120px;
 }
 
@@ -185,9 +185,9 @@ p a {
 .banner {
   position: relative;
   width: 100%;
-  background: rgba(35, 115, 235, 0.9);
+  /*background: rgba(35, 115, 235, 0.9);
   background: -webkit-linear-gradient(250deg, rgba(89, 7, 153, 0.85) 0%, rgba(89, 10, 160, 0.9) 25%, rgba(75,0,130, 0.95) 75%, rgba(70, 0, 135, 0.95) 100%); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(250deg, rgba(89, 7, 153, 0.85) 0%, rgba(89, 7, 153, 0.9) 25%, rgba(75,0,130, 0.95) 75%, rgba(70, 0, 135, 0.95) 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*background: linear-gradient(250deg, rgba(89, 7, 153, 0.85) 0%, rgba(89, 7, 153, 0.9) 25%, rgba(75,0,130, 0.95) 75%, rgba(70, 0, 135, 0.95) 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .banner-background {
@@ -196,10 +196,10 @@ p a {
   width: 100%;
   height: 100%;
   top: 0;
-  background: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/NGyZeGzFlijx95hou/young-businessman-looking-through-a-large-window-at-the-city-and-cloudy-sky-the-man-opens-the-window-for-ventilation-and-leaves-a-meeting-room_safl2l0v__F0005.png") center;
+  /*background: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/NGyZeGzFlijx95hou/young-businessman-looking-through-a-large-window-at-the-city-and-cloudy-sky-the-man-opens-the-window-for-ventilation-and-leaves-a-meeting-room_safl2l0v__F0005.png") center;
   background-size: cover;
   background-position: top;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
 }
 
 .banner-content {
@@ -354,6 +354,49 @@ p a {
   margin: 33px 7px;
   opacity: 0.3;
 }
+
+
+.univ {
+    background-color: #f9f9f9;
+    opacity: 94%;
+    background-blend-mode: normal;
+    height: 92px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.univ .univrow {
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.univ .univrow .colstyle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+font-size: 20px;
+
+color: #C7C7C7;
+
+
+}
+
 
 .about {
   background: #fff;
@@ -652,7 +695,7 @@ i.circle {
   justify-content: space-between;
   padding: 20px;
 }
-.advisors > ayush {
+.advisors > advisor {
    margin: 10px;
   padding: 20px;
 }
@@ -679,7 +722,6 @@ i.circle {
   font-weight: 700;
   font-size: 18px;
   margin: 45px auto 25px;
-  max-width: 700px;
   padding: 0 20px 0 25px;
 }
 
@@ -690,7 +732,6 @@ i.circle {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  max-width: 700px;
   margin: auto;
   padding: 0 20px 0 25px;
 }
@@ -698,7 +739,7 @@ i.circle {
 .panel {
     padding: 0 18px;
     margin: 10px 10px;
-    background-color: #f7f7f7;
+    background-color: #ffffff;
     max-height: 0;
     overflow: hidden;
     text-align: left;
@@ -714,7 +755,7 @@ i.circle {
 }
 
 .accordion {
-    background-color: #eee;
+    background-color: #fff;
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -726,7 +767,7 @@ i.circle {
 }
 
 .active, .accordion:hover {
-    background-color: #ccc;
+    background-color: #fff;
 }
 
 .accordion:after {
@@ -894,7 +935,7 @@ i.circle {
 
 .footer-bar .logo {
   opacity: 0.6;
-  margin: 20px 0 0;
+  margin: auto;
   width: 100px;
 }
 
@@ -1157,4 +1198,62 @@ i.circle {
     margin-right: 10%;
     margin-bottom: 0;
   }
+}
+
+#collapsibleTabs {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.tab {
+  margin-bottom: 20px;
+}
+
+.tab input {
+  display: none;
+}
+
+.tab label {
+  border: 1px solid #ff5a64;
+  color: #ff5a64;
+  cursor: pointer;
+  display: block;
+  padding: 10px 20px;
+  text-align: right;
+}
+
+.tab label:after {
+  content: '+';
+}
+
+.tab label:hover {
+  background-color: #ff5a64;
+  color: #fff;
+}
+
+.tabContent {
+  border: 1px solid #ff5a64;
+  border-top: none;
+  max-height: 0;
+  overflow: hidden;
+  transition-property: visibility, max-height;
+  transition-duration: .5s, .5s;
+  transition-timing-function: ease, ease-in-out;
+  visibility: hidden;
+}
+
+.tab input:checked ~ .tabContent {
+  border-bottom: 1px solid #ff5a64;
+  height: auto;
+    max-height: 300px;
+    overflow: auto;
+    visibility: visible;
+}
+
+.tab input:checked ~ label:after {
+  content: '-';
+}
+
+.tabContent * {
+  padding: 0 10px;
 }

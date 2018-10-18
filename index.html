@@ -3,7 +3,7 @@
 <html>
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="tag.js"></script>
+    <script async src="./assets/js/tag.js"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -11,7 +11,7 @@
 
       gtag('config', 'UA-110789912-1');
     </script>
-    <script src="home.js"></script>
+    <script src="./assets/js/home.js"></script>
     <!-- Facebook Pixel Code -->
     <script>
       let url = new URL(window.location.href);
@@ -31,7 +31,14 @@
       });
       fbq('track', 'PageView');
     </script>
+   <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
     <script>
       $(document).ready(function(){
         // Add smooth scrolling to all links
@@ -58,7 +65,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>Dream Internship</title>
     <meta name="viewport" content="width=device-width"/>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" href="img/favicon.png" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
@@ -68,18 +75,47 @@
     <meta property="og:url" content=""/>
     <meta property="og:image" content=""/>
     <meta property="og:description" content=" "/>
+
+      <style>
+          .mySlides {display:none;}
+      </style>
   </head>
   <body>
     <div class="banner">
-      <div class="banner-background"></div>
+      <div class="banner-background">
+          <div>
+              <img class="mySlides" src="https://picsum.photos/200/300/?image=10" style="width:100%">
+              <img class="mySlides" src="https://picsum.photos/200/300/?image=20" style="width:100%">
+              <img class="mySlides" src="https://picsum.photos/200/300/?image=30" style="width:100%">
+          </div>
+
+          <script>
+              var myIndex = 0;
+              carousel();
+
+              function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                      x[i].style.display = "none";
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}
+                  x[myIndex-1].style.display = "block";
+                  setTimeout(carousel, 5000); // Change image every 2 seconds
+              }
+          </script>
+      </div>
       <div class="banner-content">
         <div id="navbar" class="navbar">
-          <a href=".."><img class="logo" src="logo.svg" alt="Logo of the company "/></a>
-          <a href=".." style="">InternKart</a>
-          <a class="tab-spacer"></a>
-          <a class="tab" href="manifesto">BLOG</a>
+          <div>
+          <a href="/"><img class="logo" src="./assets/svg/logo.svg" alt="Logo of the company"/></a>
+          </div>
+          <a href="/" style="color: #fff">InternKart</a>
+          <!--a class="tab-spacer"></a-->
+          <a class="tab" href="#" style="color: #fff">BLOG</a>
           <div class="tab about-tab hide-small">
-            <span onclick="window.location.href='/overview';">ABOUT</span>
+            <span onclick="window.location.href='/overview';" style="color: #fff">ABOUT</span>
             <span class="down-arrow">&#9662;</span>
             <div class="dropdown-spacer"></div>
             <div class="dropdown">
@@ -87,15 +123,15 @@
               <a href="#press2">FELLOW STORIES</a>
               <a href="#press3">OUR ADVISORS</a>
               <a href="about.html">ABOUT US</a>
-              <a href="" target="_blank">CAREERS</a>
+              <a href="#" target="_blank">CAREERS</a>
             </div>
           </div>
-          <a class="tab show-small" href="#press1">HOW IT WORKS</a>
+          <a class="tab show-small" href="#press1" >HOW IT WORKS</a>
           <a class="tab show-small" href="#press2">FELLOW STORIES</a>
           <a class="tab show-small" href="#press3">OUR ADVISORS</a>
           <a class="tab show-small" href="about.html">ABOUT US</a>
-          <a class="tab" href="tel: +91-8217590576">HELP</a>
-          <a class="tab" href="https://docs.google.com/forms/d/e/1FAIpQLScTq2pccvQqkbzmPzk7nMSbIHz-oby432RFSUZuoKctz93Npw/viewform">GET STARTED</a>
+          <a class="tab" href="tel: +91-8217590576" style="color: #fff">HELP</a>
+          <a class="tab" href="https://docs.google.com/forms/d/e/1FAIpQLScTq2pccvQqkbzmPzk7nMSbIHz-oby432RFSUZuoKctz93Npw/viewform" style="color: #fff">GET STARTED</a>
           <script>
             function togglenav() {
               var x = document.getElementById("navbar");
@@ -112,7 +148,7 @@
         <h2 class="banner-subtitle">A career accelerator for students and young professionals that's <b>free until you're hired</b></h2>
         <div class="apply-form">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLScTq2pccvQqkbzmPzk7nMSbIHz-oby432RFSUZuoKctz93Npw/viewform"><button class="apply-button">Get Started</button></a>
-          <a class="apply-button-alt hide-small" href="#press">Learn More <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+          <a class="apply-button-alt hide-small" href="#press" style="color: #fff">Learn More <i class="fa fa-angle-down" aria-hidden="true"></i></a>
         </div>
       </div>
       <p class="footnote">Limited capacity in the next cohort of fellows. <a class="apply-early" href="apply"><b>Sign up early</b></a> to avoid the waitlist.</p>
@@ -127,12 +163,30 @@
       x[slideIndex-1].style.display = "block";  
       </script>
     </div>
-      <div class="press" id="press">
+      <!--div class="press row" id="press">
       <div class="show-small mobile-border"></div>
-      <span class="hired"> Our fellows work at: </span>
-      <img class="company company-1" src="mit.svg" alt="Logo of univ."/>
-      <img class="company company-2" src="tsinghua.jpg" alt="Logo of univ."/>
-      <img class="company company-2" src="purdue.jpg" alt="Logo of univ."/>
+      <span class="hired col-2"> Our fellows work at: </span>
+      <img class="company company-1 col-2" src="mit.svg" alt="Logo of univ."/>
+      <img class="company company-2 col-2" src="tsinghua.jpg" alt="Logo of univ."/>
+      <img class="company company-2 col-2" src="purdue.jpg" alt="Logo of univ."/>
+    </div-->
+    <div class="univ">
+      <div class="row univrow press" id="press">
+        <div class="col colstyle" style="font-family: Roboto;font-size: 20px; line-height: 23px">
+          Our Fellows Work At:
+        </div>
+        <div class="col" style="margin-left: 5%">
+          <img src="./assets/svg/mit.svg" style="width: 188px; height: 40px">
+        </div>
+        <div class="col" style="margin-left: 5%">
+                    <img src="./assets/img/tsinghua.jpg" style="width: 100px; height: 60px">
+        </div>
+        <div class="col" style="margin-left: 5%">
+                    <img src="./assets/img/purdue.jpg" style="width: 188px; height: 60px">
+        </div>
+        
+      </div>
+      
     </div>
     <div class="about">
       <div class="container">
@@ -140,17 +194,17 @@
         <p class="subtitle"> Internkart (erstwhile Star Apping) is the only platform in the world that connects research aspirants to Professors/Researchers looking to hire interns/ Research Assistants. The process ensures each of our clients gets a chance to research in top-notch institutes in the desired area of interest.
         </p>
         <div class="column track-column">
-          <img src="learnfrombest.svg" alt="Icon representing learning from the best"/>
+          <img src="./assets/svg/learnfrombest.svg" alt="Icon representing learning from the best"/>
           <h1>For Faculty</h1>
           <p>Professors benefit from access to a bigger talent pool with relevant experience and skills needed for successful execution of their projects</p>
         </div>
         <div class="column track-column">
-          <img src="time.svg" alt="Icon representing sessions anywhere and anytime"/>
+          <img src="./assets/svg/time.svg" alt="Icon representing sessions anywhere and anytime"/>
           <h1>For Students</h1>
           <p>Students have an opportunity to land their dream research project, and shape their careers, through a seamless application process. Prior CV-making, mailing experience is absolutely not required</p>
         </div>
         <div class="column track-column">
-          <img src="personal.svg" alt="Icon representing personalization"/>
+          <img src="./assets/svg/personal.svg" alt="Icon representing personalization"/>
           <h1>For the field of research </h1>
           <p>Greater participation of stakeholders, professors and students, across a plethora of fields will eventually lead to human progress</p>
         </div>
@@ -197,8 +251,8 @@
         </div>
         <div class="testimonial-column">
           <div class="testimonial">
-            <img class="testimonial-logo" src="tsinghua.jpg" alt="Logo of Google"/>
-            <img class="testimonial-img" src="rushi.jpg" alt="Profile picture of Pathrise alumnus"/>
+            <img class="testimonial-logo" src="./assets/img/tsinghua.jpg" alt="Logo of Google"/>
+            <img class="testimonial-img" src="./assets/img/rushi.jpg" alt="Profile picture of Pathrise alumnus"/>
             <div class="testimonial-header">
               <h1>Rushi Patel</h1>
               <h2 style="color: rgb(89,7,153);">Research Scholar</h2>
@@ -211,14 +265,30 @@
         <p class="footnote">We've worked with over a hundred fellows and counting. Read their stories <a href="stories">here</a>.</p>
       </div>
     </div>
-    <div class="advisors" id="press3">
-      <p class="title">OUR ADVISORS</p>
-      <p class="subtitle">Our advisors come from leading universities</p>
-      <div class="ayush"><img class="hide-small" src="planck.jpg" alt="Grid of logos representing where Pathrise Advisors work at"/></div>
-      <div class="ayush"><img class="hide-small" src="purdue.jpg" alt="Grid of logos representing where Pathrise Advisors work at"/></div>
-      <div class="ayush"><img class="hide-small" src="mit.svg" alt="Grid of logos representing where Pathrise Advisors work at"/></div>
-      <div class="ayush"><img class="hide-small" src="tsinghua.jpg" alt="Grid of logos representing where Pathrise Advisors work at"/></div>
-    </div>
+            <div class="advisors" id="press3">
+            <p class="title">OUR ADVISORS</p>
+            <p class="subtitle">Our advisors come from leading universities</p>
+            <div class="row" style="margin: auto">
+                <!--div class="advisor col"><img class="hide-small" src="planck.jpg" alt="Grid of logos representing where Pathrise Advisors work at"/></div>
+                <div class="advisor col"><img class="hide-small" src="purdue.jpg" alt="Grid of logos representing where Pathrise Advisors work at"/></div>
+                <div class="advisor col"><img class="hide-small" src="mit.svg" alt="Grid of logos representing where Pathrise Advisors work at"/></div>
+                <div class="advisor col"><img class="hide-small" src="tsinghua.jpg" alt="Grid of logos representing where Pathrise Advisors work at"/></div-->
+
+                <div class="col">
+                    <img src="./assets/img/planck.jpg" alt="Grid of logos representing where Pathrise Advisors work at"/>
+                </div>
+                <div class="col">
+                    <img src="./assets/img/purdue.jpg" alt="Grid of logos representing where Pathrise Advisors work at"/>
+                </div>
+                <div class="col">
+                    <img src="./assets/svg/mit.svg" alt="Grid of logos representing where Pathrise Advisors work at" />
+                </div>
+                <div class="col">
+                    <img src="./assets/img/tsinghua.jpg" alt="Grid of logos representing where Pathrise Advisors work at" />
+                </div>
+
+            </div>
+        </div>
     <div id="numbers" class="numbers">
       <div class="container">
         <p class="title">WE GET RESULTS</p>
@@ -264,41 +334,46 @@
       <div class="container">
         <p class="title">TOP QUESTIONS</p>
         <p class="subtitle">You probably have some questions &mdash; we have answers</p>
-        <button class="accordion">Why Instakart ?</button> 
-        <p class="answer-home panel">When it comes to the tedious task of searching for research internships, a lot of students ends up killing time cold emailing to the professors with only negative or no response in the end. International Internship programs like MITACS, DAAD etc are extremely competitive with fewer seats. Internkart Automates the entire process of connecting you and the professor so instead of wasting time cold emailing for an internship you can rather use it to acquire the domain knowledge for your upcoming international internship.</p>
+        <div style="background-color: #fff">
+        <p class="accordion">Why Instakart ?</p> 
+        <p class="answer-home panel">When it comes to the tedious task of searching for research internships, a lot of students ends up killing time cold emailing to the professors with only negative or no response in the end. International Internship programs like MITACS, DAAD etc are extremely competitive with fewer seats. Internkart Automates the entire process of connecting you and the professor so instead of wasting time cold emailing for an internship you can rather use it to acquire the domain knowledge for your upcoming international internship.</p></div>
 
-        <button class="accordion">How does it works?</button>
-        <p class="answer-home panel">We take your CV, Cover letter and 5 area of interest via email. We automate the process of connecting you and the professors who are into high-quality research in your preferred area of interests thus enabling you to secure internship offer letter.</p>
+        <div style="background-color: #fff">
+        <p class="accordion">How does it works?</p>
+        <p class="answer-home panel">We take your CV, Cover letter and 5 area of interest via email. We automate the process of connecting you and the professors who are into high-quality research in your preferred area of interests thus enabling you to secure internship offer letter.</p></div>
 
-        <button class="accordion">What documents/details do we need from you?</button>
+        <div style="background-color: #fff">
+        <p class="accordion">What documents/details do we need from you?</p>
         <p class="answer-home panel"> CV( Mention your research projects if you have any)(Sample Link) , 
-                                Cover letter. (Sample Link) , 3 Area of Interest</p>
+                                Cover letter. (Sample Link) , 3 Area of Interest</p></div>
 
-        <button class="accordion">What are the universities/ Professors that we send your applications to?</button>
-        <p class="answer-home panel">We usually send your emails to researchers with high-quality research publications usually coming from top universities. Some of our best students have received offer letters from MIT,  Tsinghua, Purdue, Kuka Robotics and many other top research Institutes.</p>
+        <div style="background-color: #fff">
+        <p class="accordion">What are the universities/ Professors that we send your applications to?</p>
+        <p class="answer-home panel">We usually send your emails to researchers with high-quality research publications usually coming from top universities. Some of our best students have received offer letters from MIT,  Tsinghua, Purdue, Kuka Robotics and many other top research Institutes.</p></div>
 
-        <button class="accordion">How much fee do we charge?</button>
-        <p class="answer-home panel">Usually depends on a profile to profile basis. The better your profile the less we charge. Rest be assured it will be the best investment of your life.</p>
+        <div style="background-color: #fff">
+        <p class="accordion">How much fee do we charge?</p>
+        <p class="answer-home panel">Usually depends on a profile to profile basis. The better your profile the less we charge. Rest be assured it will be the best investment of your life.</p></div>
 
-        <button class="accordion">What if we don't get an internship?</button>
-        <p class="answer-home panel">We refund the 100% amount in case we are unable to secure you an internship offer letter.</p>
+        <div style="background-color: #fff">
+        <p class="accordion">What if we don't get an internship?</p>
+        <p class="answer-home panel">We refund the 100% amount in case we are unable to secure you an internship offer letter.</p></div>
         
         <p class="footnote">Got more questions? Read our FAQ or contact us <a href="help">here</a>.</p>
       </div>
     </div>
-    <script type="text/javascript" src="accordion.js"></script>
+    <script type="text/javascript" src="./assets/js/accordion.js"></script>
     <div class="footer">
       <div class="apply-form">
-        <span>Land Your Dream Internship</span><a href="apply"><button class="apply-button">Get Started</button></a>
+        <span>Land Your Dream Internship</span><a href="https://docs.google.com/forms/d/e/1FAIpQLScTq2pccvQqkbzmPzk7nMSbIHz-oby432RFSUZuoKctz93Npw/viewform"><button class="apply-button">Get Started</button></a>
       </div>
       <div class="footer-bar">
-        <a href=".."><img class="logo" src="logo.svg" alt="Logo of the company InternKart"/></a>
-        <a href=".."><img class="logo" src="" alt="Logo of the company InternKart"/></a>
-        <a class="footer-tab left" href="overview">BLOG</a>
-        <a class="footer-tab left" href="help">HELP</a>
-        <a class="footer-tab left" href="apply">GET STARTED</a>
-        <a class="footer-tab" href="terms">TERMS</a>
-        <a class="footer-tab" href="privacy">PRIVACY</a>
+        <a href="/"><img class="logo" src="./assets/svg/logo.svg" alt="Logo of the company InternKart"/></a>
+        <a class="footer-tab left" href="#" style="color: #fff">BLOG</a>
+        <a class="footer-tab left" href="tel: +91-8217590576" style="color: #fff">HELP</a>
+        <a class="footer-tab left" href="https://docs.google.com/forms/d/e/1FAIpQLScTq2pccvQqkbzmPzk7nMSbIHz-oby432RFSUZuoKctz93Npw/viewform" style="color: #fff">GET STARTED</a>
+        <a class="footer-tab" href="#" style="color: #fff">TERMS</a>
+        <a class="footer-tab" href="#" style="color: #fff">PRIVACY</a>
         <a href=" https://www.facebook.com/appingstar/" target="_blank" class="footer-tab fa fa-facebook footer-social"></a>
         <a href="" target="_blank" class="footer-tab fa fa-twitter footer-social"></a>
         <a href="" target="_blank" class="footer-tab fa fa-linkedin footer-social"></a>
