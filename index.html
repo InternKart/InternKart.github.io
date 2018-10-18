@@ -75,37 +75,10 @@
     <meta property="og:url" content=""/>
     <meta property="og:image" content=""/>
     <meta property="og:description" content=" "/>
-
-      <style>
-          .mySlides {display:none;}
-      </style>
   </head>
   <body>
     <div class="banner">
-      <div class="banner-background">
-          <div>
-              <img class="mySlides" src="https://picsum.photos/200/300/?image=10" style="width:100%">
-              <img class="mySlides" src="https://picsum.photos/200/300/?image=20" style="width:100%">
-              <img class="mySlides" src="https://picsum.photos/200/300/?image=30" style="width:100%">
-          </div>
-
-          <script>
-              var myIndex = 0;
-              carousel();
-
-              function carousel() {
-                  var i;
-                  var x = document.getElementsByClassName("mySlides");
-                  for (i = 0; i < x.length; i++) {
-                      x[i].style.display = "none";
-                  }
-                  myIndex++;
-                  if (myIndex > x.length) {myIndex = 1}
-                  x[myIndex-1].style.display = "block";
-                  setTimeout(carousel, 5000); // Change image every 2 seconds
-              }
-          </script>
-      </div>
+      <div class="banner-background"></div>
       <div class="banner-content">
         <div id="navbar" class="navbar">
           <div>
@@ -148,7 +121,7 @@
         <h2 class="banner-subtitle">A career accelerator for students and young professionals that's <b>free until you're hired</b></h2>
         <div class="apply-form">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLScTq2pccvQqkbzmPzk7nMSbIHz-oby432RFSUZuoKctz93Npw/viewform"><button class="apply-button">Get Started</button></a>
-          <a class="apply-button-alt hide-small" href="#press" style="color: #fff">Learn More <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+          <a class="apply-button-alt hide-small" href="#press">Learn More <i class="fa fa-angle-down" aria-hidden="true"></i></a>
         </div>
       </div>
       <p class="footnote">Limited capacity in the next cohort of fellows. <a class="apply-early" href="apply"><b>Sign up early</b></a> to avoid the waitlist.</p>
