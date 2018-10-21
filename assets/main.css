@@ -42,13 +42,13 @@ a.active {
   text-decoration: none; }
 
 a {
-  opacity: 0.6; }
+   }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-  opacity: 1;
+  
    }
 
 /*h1, h2, h3, h4, h5, h6 {
