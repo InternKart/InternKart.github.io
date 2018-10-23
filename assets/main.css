@@ -1163,12 +1163,13 @@ font-family: "Lato",sans-serif;
   border: 2px #2d2d2d;
   border-radius: 50px;
   padding: 20px;
+  height: auto;
   vertical-align: middle;
   display: inline-block;
   width: 700px;
   box-shadow: 2px 2px 2px #888888;
 }
 
-#ans1{
-  /*display: none;*/
+#ans1,#ans2,#ans3,#ans4,#ans5,#ans6{
+  display: none;
 }
