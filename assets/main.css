@@ -16,6 +16,10 @@
 /* Propeller accordion */
 @import "http://propeller.in/components/accordion/css/accordion.css";
 
+html{
+  overflow-x: hidden;
+}
+
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif; }
